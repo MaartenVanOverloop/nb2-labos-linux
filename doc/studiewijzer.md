@@ -1,17 +1,11 @@
----
-title: Studiewijzer Netwerkbeheer 2 - Linux (2016-2017)
-subtitle: CVO Panta Rhei
-author: Bert Van Vreckem, Frédéric Van Walle
-lang: dutch
-documentclass: scrartcl
-...
+# Studiewijzer Netwerkbeheer 2 - Linux (2017-2018)
 
 Deze studiewijzer bevat een toelichting van de organisatie van de module Netwerkbeheer 2, onderdeel Linux van de HBO5-opleiding Informatica (optie Netwerkbeheer) voor academiejaar 2017-2018. Het onderdeel Linux wordt gegeven door:
 
 - Frédéric Van Walle <mailto:frederic.vanwalle@avondschool.be> (Eerste semester)
 - Bert Van Vreckem <mailto:bert.vanvreckem@avondschool.be> (Tweede semester)
 
-# Praktisch
+## Praktisch
 
 Wat betreft praktische afspraken, regelingen, verwachtingen, enz. in verband met deze cursus zijn dit de enige geldige bronnen van informatie:
 
@@ -51,7 +45,7 @@ De cursus Netwerkbeheer 2 bestaat uit twee grote onderdelen, Linux en Windows Se
 
 Het onderdeel Linux wordt geëvalueerd aan de hand van labo-opdrachten. Een deel van deze labo-opdrachten gaan over het opzetten van netwerkdiensten, een ander zijn troubleshooting-taken. Bij elke labo-opdracht dien je een schriftelijk verslag in op Chamilo, onder Opdrachten, **én** geef je de lector tijdens de contactmomenten een mondelinge toelichting waarin je je werkwijze toelicht en aantoont dat je resultaat voldoet aan de opgegeven specificaties.
 
-# Verwachte voorkennis
+## Verwachte voorkennis
 
 Deze cursus bouwt verder op de veronderstelling dat je al een zekere basiskennis van Linux hebt. Meer bepaald veronderstellen we dat je volgende onderwerpen beheerst:
 
@@ -73,9 +67,9 @@ Wie er behoefte/nood aan heeft om bepaalde verwachte voorkennis bij te werken, k
 * Cobbaut, P. 2015. *Linux Fundamentals.* <http://linux-training.be/downloads/> (gratis e-book)
 * Bert Van Vreckem, *Linux videolessen* <https://www.youtube.com/user/bertvvrhogent/>
 
-# Leerdoelen
+## Leerdoelen
 
-## Basistaken systeembeheer
+### Basistaken systeembeheer
 
 - VirtualBox VMs kunnen aanmaken en configureren
     - VirtualBox netwerkinstellingen begrijpen en kunnen toepassen
@@ -94,7 +88,7 @@ Wie er behoefte/nood aan heeft om bepaalde verwachte voorkennis bij te werken, k
 - Troubleshooting
     - Op een systematische en grondige manier configuratieproblemen van een Linux server opsporen en oplossen
 
-## Netwerkservices opzetten
+### Netwerkservices opzetten
 
 - Een host en netwerkservices kunnen beveiligen tegen courante types van aanvallen
     - De firewall van een host kunnen instellen
@@ -112,7 +106,7 @@ Wie er behoefte/nood aan heeft om bepaalde verwachte voorkennis bij te werken, k
 - Een ISC DHCP-server kunnen installeren en configureren
 - De installatie van een netwerkservice kunnen automatiseren aan de hand van Bash scripts
 
-# Leermiddelen
+## Leermiddelen
 
 Probeer in te gaan tegen de neiging om al je vragen op Google op te zoeken, want je zal vaak informatie vinden die niet relevant is voor de variant van Linux die we in deze cursus gebruiken (RHEL/CentOS 7), of verouderd. Veel HOWTOs, blogartikels en handleidingen zijn geschreven in de context van Ubuntu/Debian of van een oudere versie van RHEL/CentOS en die verschillen in een aantal fundamentele zaken van de laatste versie van CentOS.
 
