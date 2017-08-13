@@ -148,29 +148,14 @@ Als je toegang tot de fileserver gekregen hebt vanaf een Windows-hostsysteem en 
 net use \\files /del
 ```
 
-## Evaluatie
+## Evaluatiecriteria
 
-Er is zoals gewoonlijk een acceptatietest beschikbaar voor het valideren van deze specificaties. Vergeet niet je eigen gebruikersnaam in het testscript aan te passen!
+Bij het beoordelen wordt rekening gehouden met volgende aspecten:
 
-Zorg dat volgende deliverables op Github geregistreerd zijn en aangeduid met tag `labo3`.
-
-* Labo-verslag met
-    * Toelichting van de gekozen aanpak: welke stappen heb je ondernomen?
+- Alle code zit in de Github repository
+- Alle acceptatietests slagen
+- Het labo-verslag is aanwezig en volledig met:
+    * Toelichting van de gekozen aanpak: hoe heb je de requirements gerealiseerd?
     * Testplan en -rapport: hoe toon je aan dat de specificaties, zoals hierboven omschreven, ook gerealiseerd zijn?
     * Gebruikte bronnen voor het uitwerken van de opdracht (naast deze uit de referentielijst)
-* Uitgewerkt installatiescript `provisioning/srv011.sh`, en bijhorende configuratiebestanden
-* Demo met toelichting aan de hand van je testplan
-
-Om de score in de rechterkolom te halen, moet je **alle** taken tot en met de overeenkomstige lijn realiseren.
-
-| Taak                                                                     | Score     |
-| :---                                                                     | :---      |
-| Alle code zit in de Github repository, aangeduid met tag `labo3`         |           |
-| Het labo-verslag is aanwezig en volledig                                 |           |
-| Mondeling toegelicht/demo gegeven aan de lector                          |           |
-| Vagrant up -> werkende Samba server met correcte lees- en schrijftoegang |           |
-| De service is beschikbaar vanop het hostsysteem via `\\192.168.15.11`    | bekwaam   |
-| De service is beschikbaar vanop het hostsysteem via `\\files`            |           |
-| Gebruikers hebben toegang tot hun home-directory                         | gevorderd |
-| Leden van dezelfde groep hebben schrijftoegang tot elkaars bestanden     | deskundig |
-
+- Mondeling toegelicht/demo gegeven aan de lector

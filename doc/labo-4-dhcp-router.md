@@ -71,27 +71,14 @@ Een werkstation moet *zonder specifiek iets te configureren*:
 - de website van het domein kunnen bekijken via URL <https://www.linuxlab.lan>
 - toegang kunnen krijgen tot de shares op de fileserver (in Windows bv. via `\\files\public`, in Linux `smb://files/public`).
 
-## Evaluatie
+## Evaluatiecriteria
 
-Zorg dat volgende deliverables op Github geregistreerd zijn en aangeduid met tag `labo4`.
+Bij het beoordelen wordt rekening gehouden met volgende aspecten:
 
-* Labo-verslag met
+- Alle code zit in de Github repository
+- Alle acceptatietests slagen
+- Het labo-verslag is aanwezig en volledig met:
     * Toelichting van de gekozen aanpak: hoe heb je de requirements gerealiseerd?
     * Testplan en -rapport: hoe toon je aan dat de specificaties, zoals hierboven omschreven, ook gerealiseerd zijn?
     * Gebruikte bronnen voor het uitwerken van de opdracht (naast deze uit de referentielijst)
-* Uitgewerkt installatiescript `provisioning/srv002.sh` en `provisioning/router.sh`, en bijhorende configuratiebestanden
-* Demo met toelichting aan de hand van je testplan
-
-Om de score in de rechterkolom te halen, moet je **alle** taken tot en met de overeenkomstige lijn realiseren.
-
-| Taak                                                             | Score     |
-| :---                                                             | :---      |
-| Alle code zit in de Github repository, aangeduid met tag `labo4` |           |
-| Het labo-verslag is aanwezig en volledig                         |           |
-| Mondeling toegelicht/demo gegeven aan de lector                  |           |
-| `vagrant up srv002` -> werkende DHCP-server                      |           |
-| Werkstation krijgt IP (gereserveerd voor MAC), gateway, DNS      |           |
-| `vagrant up router` -> werkende router met NAT                   | bekwaam   |
-| Werkstation kan interne services bereiken (website + fileserver) | gevorderd |
-| Werkstation kan Internet bereiken                                | deskundig |
-
+- Mondeling toegelicht/demo gegeven aan de lector

@@ -8,22 +8,21 @@
 
 ## Studiemateriaal en referenties
 
-- Aitchison, R. 2015. *DNS for Rocket Scientists.* Zytrax Open. Opgehaald op 2016-03-22 van <http://www.zytrax.com/books/dns/>/
 - *Dnsmasq documentation.* Opgehaald op 2017-01-29 van <http://www.thekelleys.org.uk/dnsmasq/doc.html>
+- Aitchison, R. 2015. *DNS for Rocket Scientists.* Zytrax Open. Opgehaald op 2016-03-22 van <http://www.zytrax.com/books/dns/>
 
 ## Opdrachtomschrijving
 
-DNS is essentieel voor de correcte werking van een domein, en heel wat ([volgens sommigen *alle*](http://www.krisbuytaert.be/blog/)) netwerkproblemen zijn terug te leiden tot fouten in de configuratie van DNS. Er zijn verschillende implementaties van DNS, maar veruit de meest gebruikte (en daarom ook essentieel voor de werking van het Internet als geheel) is [BIND](https://www.isc.org/downloads/bind/).
+DNS is essentieel voor de correcte werking van een domein, en heel wat ([volgens sommigen *alle*](http://www.krisbuytaert.be/blog/)) netwerkproblemen zijn terug te leiden tot fouten in de configuratie van DNS. Er zijn verschillende implementaties van DNS (de meest gebruikte in de praktijk is wellicht [BIND](https://www.isc.org/downloads/bind/), maar voor ons domein, *linuxlab.lan*, zullen we gebruik maken van het eenvoudigere [Dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html).
 
-In dit labo gaan we een DNS-server opzetten voor ons domein, "linuxlab.lan". In de tabel hieronder vind je een overzicht van de hosts, met hun IP adres en eventuele aliassen:
+In de tabel hieronder vind je een overzicht van de hosts, met hun IP adres en eventuele aliassen:
 
 | Hostnaam | Alias | IP            | Functie                                               |
 | :--      | :---  | :---          | :---                                                  |
-| srv001   | ns    | 192.168.15.2  | DNS server Dnsmasq                                    |
+| srv001   | ns1   | 192.168.15.2  | DNS server (Dnsmasq)                                  |
 | srv002   | dhcp  | 192.168.15.3  | DHCP-server                                           |
 | srv010   | www   | 192.168.15.10 | Webserver (LAMP-stack met Apache, PHP, Mariadb + CMS) |
 | srv011   | file  | 192.168.15.11 | Fileserver (Samba)                                    |
-
 
 - Voor alle hosts moet een "forward lookup" (van hostnaam naar IP-adres) en een "reverse lookup" (van IP-adres naar hostnaam) lukken
 - Bovendien moeten ook de aliassen herkend worden.
@@ -32,16 +31,9 @@ Bedoeling is uiteraard opnieuw om heel de installatie te automatiseren aan de ha
 
 ## Over DNS
 
-DNS is op zich geen complexe netwerkservice. Het komt neer op een databank met enkele tabellen die in de vorm van tekstbestanden zijn opgemaakt. Er zijn verschillende types van records, o.a.
-
-- `A` voor mapping van hostnaam naar IP-adres
-- `CNAME` voor een alias
-- `PTR` voor mapping van IP-adres naar hostnaam (in een "reverse lookup" zonebestand)
-- enz. (lees de documentatie!)
+DNS is op zich geen complexe netwerkservice. Het komt neer op een databank met enkele tabellen die in de vorm van tekstbestanden zijn opgemaakt.
 
 Voor dit labo maken we gebruik van Dnsmasq, een eenvoudige maar veelzijdige service die onder andere DNS ondersteunt, maar ook DHCP. Wanneer Dnsmasq draait een een query ontvangt, zal die eerst in het bestand `/etc/hosts` opzoeken of de opgegeven hostnaam erin gevonden wordt. Indien wel, zal het geassocieerde IP-adres teruggegeven worden. Zoniet zal Dnsmasq het verzoek doorgeven aan de DNS server(s) die het zelf gebruikt, opgesomd in `/etc/resolv.conf`.
-
-Merk op dat Dnsmasq geschikt is voor gebruik in een intern netwerk, maar niet echt voor het opzetten van een zgn. "Authoritative Name Server" voor een bepaald netwerkdomein.
 
 ### Troubleshooting
 
@@ -77,27 +69,14 @@ Bij het opzetten van Dnsmasq zijn volgende tips nuttig voor het opsporen van mog
     dig @SERVER HOST +short  # Geef enkel het IP-adres terug, geen extra info
     ```
 
-## Evaluatie
+## Evaluatiecriteria
 
-Zorg dat volgende deliverables op Github geregistreerd zijn en aangeduid met tag `labo2`.
+Bij het beoordelen wordt rekening gehouden met volgende aspecten:
 
-* Labo-verslag met
-    * Toelichting van de gekozen aanpak: welke stappen heb je ondernomen?
-    * Testplan en testrapport. Stel zelf het scenario voor je tesplan op! Gebruik dat van het eerste labo (opzetten werkomgeving) als inspiratie.
-    * Gebruikte bronnen voor het uitwerken van de opdracht
-* Uitgewerkte installatiescripts (`provisioning/srv001.sh`), en bijhorende configuratiebestanden
-* Demo met toelichting aan de hand van je testplan
-
-Om de score in de rechterkolom te halen, moet je **alle** criteria tot en met de overeenkomstige lijn realiseren.
-
-| Taak                                                             | Score     |
-| :---                                                             | :---      |
-| Alle code zit in de Github repository, aangeduid met tag `labo2` |           |
-| Het labo-verslag is aanwezig en volledig                         |           |
-| Mondeling toegelicht/demo gegeven aan de lector                  |           |
-| Het testscript `common.bats` slaagt ook voor deze hosts          |           |
-| De DNS-server antwoordt op DNS-requests vanop het hostsysteem    |           |
-| Forward lookups slagen (testscript)                              | bekwaam   |
-| Reverse lookups slagen (testscript)                              | gevorderd |
-| Alias lookups slagen (testscript)                                | deskundig |
-
+- Alle code zit in de Github repository
+- Alle acceptatietests slagen
+- Het labo-verslag is aanwezig en volledig met:
+    * Toelichting van de gekozen aanpak: hoe heb je de requirements gerealiseerd?
+    * Testplan en -rapport: hoe toon je aan dat de specificaties, zoals hierboven omschreven, ook gerealiseerd zijn?
+    * Gebruikte bronnen voor het uitwerken van de opdracht (naast deze uit de referentielijst)
+- Mondeling toegelicht/demo gegeven aan de lector

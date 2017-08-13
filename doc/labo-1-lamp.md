@@ -49,27 +49,14 @@ Bij deze opgave hoort ook een testscript, `lamp.bats`, dat in de directory `test
 
 Zoek voor alle requirements op hoe je ze gaat testen: welke commando's kan je gebruiken of welke handelingen moet je uitvoeren? Welke uitvoer verwacht je telkens? Is het resultaat wat je verwacht? Wat heb je moeten doen om eventuele fouten recht te trekken?
 
-## Evaluatie
+## Evaluatiecriteria
 
-Zorg dat volgende deliverables op Github geregistreerd zijn en aangeduid met tag `labo1`.
+Bij het beoordelen wordt rekening gehouden met volgende aspecten:
 
-* Labo-verslag met
+- Alle code zit in de Github repository
+- Alle acceptatietests slagen
+- Het labo-verslag is aanwezig en volledig met:
     * Toelichting van de gekozen aanpak: hoe heb je de requirements gerealiseerd?
     * Testplan en -rapport: hoe toon je aan dat de specificaties, zoals hierboven omschreven, ook gerealiseerd zijn?
     * Gebruikte bronnen voor het uitwerken van de opdracht (naast deze uit de referentielijst)
-* Uitgewerkt installatiescript `provisioning/srv010.sh`, en bijhorende configuratiebestanden
-* Demo met toelichting aan de hand van je testplan
-
-Om de score in de rechterkolom te halen, moet je **alle** taken tot en met de overeenkomstige lijn realiseren.
-
-| Taak                                                             | Score     |
-| :---                                                             | :---      |
-| Alle code zit in de Github repository, aangeduid met tag `labo1` |           |
-| Het labo-verslag is aanwezig en volledig                         |           |
-| Mondeling toegelicht/demo gegeven aan de lector                  |           |
-| `vagrant up` $\Rightarrow$ werkende VM met Apache+PHP en MariaDB | bekwaam   |
-| Firewall- en SELinux-instellingen zijn correct                   |           |
-| `vagrant up` $\Rightarrow$ MySQL mét een DB voor de app          | gevorderd |
-| HTTPS-ondersteuning met self-signed certificate                  |           |
-| `vagrant up` $\Rightarrow$ Wordpress installatiepagina zichtbaar | deskundig |
-| Basisbeveiliging MariaDB                                         |           |
+- Mondeling toegelicht/demo gegeven aan de lector

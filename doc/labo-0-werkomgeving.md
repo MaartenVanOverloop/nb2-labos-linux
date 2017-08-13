@@ -230,20 +230,17 @@ Om je op weg te helpen, geven we bij dit labo een aanzet voor het tesplan, maar 
     [bert@srv010 ~]$
     ```
 
-## Evaluatie
+## Evaluatiecriteria
 
-Om de score in de rechterkolom te halen, moet je **alle** taken tot en met de overeenkomstige lijn realiseren.
+Volgende specificaties dienen gerealiseerd te worden:
 
-| Taak                                                         | Score     |
-| :---                                                         | :---      |
-| De gevraagde software is geïnstalleerd                       |           |
-| Github account en repository is aangemaakt                   |           |
-| De lector heeft toegang tot je Git repository                |           |
-| Labo-verslag is aanwezig in je Git repository en is volledig |           |
-| Alle documentatie ivm dit labo zit in Github                 |           |
-| Alle specs van de VM (zie hoger) zijn gerealiseerd           | bekwaam   |
-| Er is geen wachtwoord nodig voor inloggen op de VM met ssh   |           |
-| Er is geen wachtwoord nodig voor `git push`                  | gevorderd |
-| Alle taken uitgevoerd vóór afloop van de 1e les              | deskundig |
+- De gevraagde software is geïnstalleerd
+- Github account en repository is aangemaakt
+- De lector heeft toegang tot je Git repository
+- Labo-verslag is aanwezig in je Git repository en is volledig
+- Alle documentatie ivm dit labo zit in Github
+- Alle specs van de VM (zie hoger) zijn gerealiseerd
+- Er is geen wachtwoord nodig voor inloggen op de VM met ssh
+- Er is geen wachtwoord nodig voor `git push`
 
 Het aantonen van de specificaties gebeurt aan de hand van een demo aan de lector waar je alle stappen van het testplan doorloopt.
