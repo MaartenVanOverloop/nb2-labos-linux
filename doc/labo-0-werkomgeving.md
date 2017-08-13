@@ -179,6 +179,7 @@ Bestudeer het testscript `runbats.sh`. Hoe werkt het? Lees de handleiding van he
 In staat zijn om systeembeheertaken uit te voeren zoals het installeren en configureren van software of netwerkservices is slechts het begin van wat het inhoudt om een systeembeheerder te zijn. Het is ook belangrijk om op een betrouwbare, reproduceerbare en consistente manier systemen in productie te brengen die beschikbaar zijn voor de gebruikers en voldoen aan de vooraf afgesproken specificaties. Het bijhouden van gedetaileerde procedures is daarbij een minimum, maar het automatiseren van het proces is beter (Limoncelli, 2012). Dit wordt de rode draad door heel de cursus.
 
 - Zorg dat volgende packages geïnstalleerd zijn: `bash-completion`, `bind-utils`, `git`, `nano`, `tree`, `vim-enhanced`, `wget`
+- RHEL/CentOS krijgen standaard de beveiligingsmodule SELinux meegeleverd. Zorg er voor dat SELinux geactiveerd is ("Enforcing") en ook blijft na het (her)starten van de VM.
 - Maak een gebruiker aan die je ook kan gebruiken als administrator (d.w.z. een gebruiker met sudo-rechten). Gebruik je eigen voornaam. Vergeet niet dit aan te passen in het testscript (variabele `admin_user` bovenaan het script).
 - Toon aan dat je vanop het hostsysteem via ssh kan inloggen op de VM met de pas aangemaakte gebruiker. Dat kan met "ssh USER@IP_ADRES" in een (Git) Bash shell of met [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 - Zorg er voor dat voor het inloggen vanop het hostsysteem geen wachtwoord nodig is (a.h.v. een SSH-sleutelpaar).
