@@ -26,7 +26,8 @@ Als je werkt met je eigen laptop, Installeer dan de nodige software, meer bepaal
 - De laatste versie van [VirtualBox](https://virtualbox.org/wiki/Downloads) mét Extension Pack
     - Alle machines die we opzetten in de labo's zijn gebaseerd op een recente release van [CentOS](https://www.centos.org/) en worden opgezet als VirtualBox VMs. Het is echter niet nodig een installatie-ISO te downloaden, het opzetten van CentOS VMs die klaar zijn voor gebruik gebeurt is geautomatiseerd.
 - [Vagrant](http://vagrantup.com/) is de tool die het opzetten van VMs automatiseert. Het is een command-line tool die VirtualBox (of een ander virtualisatieplatform) aanstuurt.
-- [Git](http://git-scm.com/download/win), incl. de Bash shell "Git Bash". Je kan eventueel ook een grafische Git client installeren, bv. [Sourcetree](http://www.sourcetreeapp.com/) of [Github Desktop](https://desktop.github.com/).
+    - Van Vagrant en Virtualbox verschijnen regelmatig nieuwe versies. Soms gebeurt het dat een bepaalde combinatie van versies niet goed werkt. Als je een goed werkende opstelling hebt, is het daarom af te raden om updates te installeren tijdens het semester.
+- [Git](http://git-scm.com/download/win), incl. de Bash shell "Git Bash". Je kan eventueel ook een grafische Git client installeren, bv. [Github Desktop](https://desktop.github.com/) of [Sourcetree](http://www.sourcetreeapp.com/).
 
 In deze opgave (en alle volgende) verwijzen we naar de pc waarop je werkt als het "hostsysteem" en de servers die we opzetten als de virtuele machine of VM.
 
@@ -35,10 +36,34 @@ In deze opgave (en alle volgende) verwijzen we naar de pc waarop je werkt als he
 We gaan de volledige schriftelijke neerslag van de labo-taken bijhouden in een *versiebeheersysteem*. Dat omvat alle scripts en de exacte configuratie van de opgezette systemen, maar ook je documentatie, zoals procedures, "cheat sheets" en "checklists", enz. Op het einde van het semester moet je aan de hand hiervan in principe het gehele op te zetten netwerk kunnen reconstrueren zonder manuele tussenkomst.
 
 1. Maak een account aan (als je dit nog niet hebt) op Github. Je kan het inloggen met gebruikersnaam en wachtwoord vereenvoudigen door een [SSH-sleutelpaar](https://help.github.com/articles/generating-an-ssh-key/) aan te maken. Maak zo'n sleutelpaar aan in Git Bash (voor je gemak: zonder passphrase) en registreer de publieke sleutel bij Github.
-2. Ga naar de Github classroom (URL via Chamilo gepubliceerd) en klik door op "Accept this assignment". Je kan daarna doorklikken naar een repository die enkel voor jou toegankelijk is, waar startcode en de informatie over de opgaven gepubliceerd zijn.
+    ```
+    $ ssh-keygen
+    Generating public/private rsa key pair.
+    Enter file in which to save the key (/d/Users/Bert/.ssh/id_rsa):
+    Enter passphrase (empty for no passphrase):
+    Enter same passphrase again:
+    Your identification has been saved in id_rsa.
+    Your public key has been saved in id_rsa.pub.
+    The key fingerprint is:
+    SHA256:AzAeA7KrzKUg6V4IVGTtvQf7GhY/a8vtLB8ck46TbOM Bert@DESKTOP-Q690SE3
+    The key's randomart image is:
+    +---[RSA 2048]----+
+    |. o=*            |
+    | oo. *           |
+    |..  o o          |
+    |.o   . +    .    |
+    |*  .   .S  +     |
+    |O +    o+o= o    |
+    |.* .   ooX +     |
+    |. .   . =+B .    |
+    | .     .oE==     |
+    +----[SHA256]-----+
+
+    ```
+2. Ga naar de Github classroom (URL via Chamilo gepubliceerd) en klik door op "Accept this assignment". Je kan daarna doorklikken naar een repository die enkel voor jou en de lector toegankelijk is, waar startcode en de informatie over de opgaven gepubliceerd zijn.
 3. Maak lokaal in een directory die je voorbehoudt voor al wat met deze cursus te maken heeft een kloon van je repository. Dat kan via de groene knop rechts met "Clone or Download". Kopieer daar de "URL" naar je repository. Kies "Use SSH". In Git Bash ga je naar de directory waarbinnen je al je materiaal in verband met deze cursus wil bijhouden en voert volgend commando uit:
 
-    ```Bash
+    ```
     $ git clone --config core.autocrlf=input git@github.org:cvopantarhei/nb2linux-GEBRUIKERSNAAM.git
     ```
 
@@ -222,4 +247,3 @@ Om de score in de rechterkolom te halen, moet je **alle** taken tot en met de ov
 | Alle taken uitgevoerd vóór afloop van de 1e les              | deskundig |
 
 Het aantonen van de specificaties gebeurt aan de hand van een demo aan de lector waar je alle stappen van het testplan doorloopt.
-
