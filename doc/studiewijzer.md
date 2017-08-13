@@ -43,7 +43,31 @@ Ondanks het feit dat aanwezigheid niet verplicht is, dien je wel de labo's (zie 
 
 De cursus Netwerkbeheer 2 bestaat uit twee grote onderdelen, Linux en Windows Server. Deze staan respectievelijk op 60% en 40% van het totaal. Het beoordelen van de bekomen competenties gebeurt volledig op basis van niet-periodegebonden evaluatie. Je moet voor beide onderdelen afzonderlijk geslaagd zijn om voor de gehele cursus te slagen. Omdat de cursus volledig via niet-periodegebonden evaluatie beoordeeld wordt, wordt er geen 2e zittijd ingericht. Zie ook de modulefiche voor meer info.
 
-Het onderdeel Linux wordt geëvalueerd aan de hand van labo-opdrachten. Een deel van deze labo-opdrachten gaan over het opzetten van netwerkdiensten, een ander zijn troubleshooting-taken. Bij elke labo-opdracht dien je een schriftelijk verslag in op Chamilo, onder Opdrachten, **én** geef je de lector tijdens de contactmomenten een mondelinge toelichting waarin je je werkwijze toelicht en aantoont dat je resultaat voldoet aan de opgegeven specificaties.
+Het onderdeel Linux wordt geëvalueerd aan de hand van labo-opdrachten. Een deel van deze labo-opdrachten gaan over het opzetten van netwerkdiensten, een ander zijn troubleshooting-taken. Bij elke labo-opdracht dien je een schriftelijk verslag in op Chamilo, onder Opdrachten, **én** geef je de lector tijdens de contactmomenten een demo met mondelinge toelichting waarin je je werkwijze toelicht en aantoont dat je resultaat voldoet aan de opgegeven specificaties.
+
+Voor de "gewone" labo-taken worden volgende richtlijnen gehanteerd bij het toekennen van de score:
+
+- 10/10: de opdracht is volledig volgens de specificaties uitgewerkt (d.w.z. alle acceptatietests slagen), en de lector kan de opstelling onafhankelijk en zonder wijzigigingen aan het configuratiescript reconstrueren aan de hand van de code van de cursist op Github. De cursist is grotendeels zelfstandig tot dit resultaat gekomen en heeft hier weinig tot geen hulp voor nodig gehad. De cursist heeft een demo gegeven en mondeling toegelicht. In het labo-verslag is duidelijk aangetoond dat de specificaties inderdaad gehaald zijn, ahv. een testverslag en console-transcript van uitgevoerde acceptatietests.
+- 9-8-7-6/10: de opdracht is volledig volgens de specificaties uitgewerkt, maar aan de andere verwachtingen is niet of in mindere mate voldaan.
+- 5/10: de opdracht is volledig volgens de specificaties uitgewerkt, maar de cursist heeft heel veel hulp nodig gehad van de lector om tot dit resultaat te komen.
+- 4-3-2-1/10: de opdracht is slechts gedeeltelijk volgens de specificaties uitgewerkt. Het labo-verslag ontbreekt of is onvolledig.
+- 0/10: de cursist heeft de opdracht niet gerealiseerd
+
+Voor de troubleshooting-taken geldt:
+
+- 10/10: alle fouten werden tijdens de sessie (dus binnen 3,5 uur) gevonden en opgelost. Het eindresultaat werd gedemonstreerd aan de lector (ahv uitvoeren acceptatietests). Het verslag is volledig en gedetailleerd en daaruit blijkt dat de cursist de bottom-up strategie op een systematische en grondige wijze gehanteerd heeft.
+- 9-8-7-6-5/10: niet alle fouten werden tijdens de sessie gevonden en opgelost, maar de netwerkservice(s) die in de opdracht aan bod komt/komen zijn beschikbaar voor clients op het lokale netwerk. Het verslag is volledig (tot op het punt waar de cursist gekomen is) en daaruit blijkt dat de cursist de bottom-up strategie op een systematische en grondige wijze gehanteerd heeft.
+- 4-3-2-1/10: de cursist is er niet in geslaagd om de netwerkservice(s) beschikbaar te maken voor clients op het netwerk. Het verslag is onvolledig of er blijkt uit dat de cursist de bottom-up strategie *niet* systematisch en/of grondig toegepast heeft.
+- 0/10: de cursist heeft het troubleshooting-labo niet uitgevoerd.
+
+Voor het bepalen van het eindresultaat wordt een gewogen som genomen van de verschillende labo's, wat een totaal op 60 oplevert:
+
+- Labo 0 (opzetten werkomgeving): 5
+- Labo 1 (LAMP): 15
+- Labo 2 (DNS): 10
+- Labo 3 (Samba): 10
+- Labo 4 (DHCP/gateway): 10
+- Troubleshooting: 10 (het *beste* resultaat van de uitgevoerde troubleshooting-labo's)
 
 ## Verwachte voorkennis
 
