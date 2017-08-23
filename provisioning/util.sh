@@ -59,7 +59,7 @@ ensure_sebool()  {
 # User management
 #------------------------------------------------------------------------------
 
-# Usage: create_user USERNAME
+# Usage: ensure_user_exists USERNAME
 #
 # Create the user with the specified name if it doesn’t exist
 ensure_user_exists() {
@@ -86,7 +86,7 @@ assign_groups() {
   done
 }
 
-# Usage: samba_passwd USERNAME PASSWORD
+# Usage: set_samba_passwd USERNAME PASSWORD
 #
 # Ensures that the Samba user with the specified name exists and is assigned
 # the specified password
