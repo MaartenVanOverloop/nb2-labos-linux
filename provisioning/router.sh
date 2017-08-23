@@ -11,7 +11,6 @@ delete system console device ttyS0
 #------------------------------------------------------------------------------
 
 # TODO: set the host name
-set system host-name 'Router'
 
 #------------------------------------------------------------------------------
 # IP settings
