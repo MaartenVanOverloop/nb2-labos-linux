@@ -33,6 +33,17 @@ admin_user=bert
   wget --version
 }
 
+@test "SELinux status should be Enforcing" {
+  run getenforce
+  [ "${status}" -eq 0 ]
+  [ "${output}" = 'Enforcing' ]
+}
+
+@test "The firewall should be running and loaded at boot time" {
+  systemctl is-active firewalld.service
+  systemctl is-enabled firewalld.service
+}
+
 @test "Admin user ${admin_user} should exist" {
   # The user should exist
   getent passwd ${admin_user}
