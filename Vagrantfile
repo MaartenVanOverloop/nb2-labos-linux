@@ -78,6 +78,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       node.vm.network :private_network, network_options(host)
       custom_synced_folders(node.vm, host)
 
+      node.vm.provider 'virtualbox' do |vb|
+        vb.memory = 512
+        vb.customize ['modifyvm', :id, '--groups', PROJECT_NAME]
+      end
+
       # Run configuration script for the VM
       node.vm.provision 'shell', path: 'provisioning/' + host['name'] + '.sh'
     end
