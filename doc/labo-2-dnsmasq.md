@@ -1,4 +1,4 @@
-# Opdracht 2: Domain Name Service met BIND
+# Opdracht 2: Domain Name Service met Dnsmasq
 
 ## Leerdoelen
 
