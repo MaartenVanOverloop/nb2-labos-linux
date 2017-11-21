@@ -34,15 +34,12 @@ assert_reverse_lookup() {
 # host name NAME.DOMAIN and to IP, a nonzero status otherwise
 assert_alias_lookup() {
   local alias="$1"
-  local name="$2"
-  local ip="$3"
+  local ip="$2"
   local result="$(dig @${sut_ip} ${alias}.${domain} +short)"
 
-  echo "expected: ${name}"
-  echo "        : ${ip}"
+  echo "expected: ${ip}"
   echo "result  : ${result}"
 
-  echo ${result} | grep "${name}"
   echo ${result} | grep "${ip}"
 }
 
@@ -105,9 +102,9 @@ assert_mx_lookup() {
 }
 
 @test 'Alias lookups' {
-  #                   alias      hostname  IP
-  assert_alias_lookup ns         srv001     192.168.15.2
-  assert_alias_lookup dhcp       srv002     192.168.15.3
-  assert_alias_lookup www        srv010     192.168.15.10
-  assert_alias_lookup file       srv011     192.168.15.11
+  #                   alias      IP
+  assert_alias_lookup ns         192.168.15.2
+  assert_alias_lookup dhcp       192.168.15.3
+  assert_alias_lookup www        192.168.15.10
+  assert_alias_lookup file       192.168.15.11
 }
