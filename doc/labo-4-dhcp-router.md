@@ -11,7 +11,7 @@
 ## Studiemateriaala en referenties
 
 - Lemon, T. (n.d.). *`dhcpd.conf(5)` man page.* <http://linux.die.net/man/5/dhcpd.conf>
-- Van Vreckem, B. (2014). *VyOS cheat sheet*. <https://github.com/bertvv/cheat-sheets/blob/master/src/VyOS.md>
+- Van Vreckem, B. (2014). *VyOS cheat sheet*. <https://bertvv.github.io/cheat-sheets/VyOS.html>
 - VyOS. (n.d.). VyOS User Guide. <http://vyos.net/wiki/User_Guide>
 
 ## Opdrachtomschrijving
