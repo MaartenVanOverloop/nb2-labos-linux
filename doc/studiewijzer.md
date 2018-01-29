@@ -144,6 +144,7 @@ Je kan de "RHEL 7 System Administrator's Guide" beschouwen als het handboek voor
     - hst. 1.6-9, 2.1-4, 3, 10, 11
 - Jahoda, M., et al. 2016. *Red Hat Enterprise Linux 7 SELinux User's and Administrator's Guide.* <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/SELinux_Users_and_Administrators_Guide/>
     - hst. 1-4, 10, 13, 14, 17, 20, 24
+- The Samba Team (n.d.); *smb.conf(5) man page* <https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html>
 - Svistunov, M., et al. 2016. *Red Hat Enterprise Linux 7 System Administrator's Guide* <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/>
     - hst. 1-4, 7-9, 11, 14.1, 18, 20
 * Van Vreckem, B. (2017). *Basic commands for EL7*, CentOS Dojo Brussels 2017. <https://bertvv.github.io/presentation-el7-basics/>
