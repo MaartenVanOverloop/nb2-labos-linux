@@ -26,6 +26,8 @@ In de tabel hieronder vind je een overzicht van de hosts, met hun IP adres en ev
 
 - Voor alle hosts moet een "forward lookup" (van hostnaam naar IP-adres) en een "reverse lookup" (van IP-adres naar hostnaam) lukken
 - Bovendien moeten ook de aliassen herkend worden.
+- Zorg er voor dat reverse lookups voor private IP-subnetten (bv. 192.168.x.y) nooit doorgegeven worden naar een andere DNS-server. Ook lokale zoekopdrachten zonder de domeinnaam (bv. `nslookup srv001`) mogen nooit doorgegeven worden aan externe DNS-servers.
+- Zorg er voor dat Dnsmasq automatisch de domeinnaam toevoegt aan hostnamen zonder domeinnaam die in `/etc/hosts` voorkomen.
 
 Bedoeling is uiteraard opnieuw om heel de installatie te automatiseren aan de hand van een provisioning-script, dus alle acceptatietests (zie verder) slagen meteen na het reproduceren van de VM met "vagrant up".
 
