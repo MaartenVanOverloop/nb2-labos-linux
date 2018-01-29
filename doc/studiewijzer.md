@@ -29,7 +29,7 @@ Tenslotte hebben we ook aandacht voor **troubleshooting**, het op een systematis
 
 ## Opzet lesmomenten
 
-In deze cursus beperken we hoorcolleges tot het absolute minimum. Onze opvatting is dat systeembeheer een vakdomein is dat je je enkel kan eigen maken door **praktijkervaring** op te doen. Tijdens de contactmomenten willen we daar dan ook maximaal op inzetten.
+In deze cursus proberen we maximaal in te zetten op het opbouwen van **praktijkervaring**. Onze opvatting is dat systeembeheer een vakdomein is dat je je enkel op deze manier kan eigen maken. Tijdens de contactmomenten wordt er dus vooral aan labo-taken gewerkt, afgewisseld met hoorcolleges.
 
 Aan de hand van een reeks **labo-taken** verdiepen we ons in het opzetten van netwerkdiensten op een Linux-systeem en het automatiseren ervan. In de eerste plaats tracht je die zelfstandig uit te werken, gebruik makend van de opgegeven studiematerialen. Er worden bij elke opdracht een aantal referenties aangereikt, maar het is aan jou om die te bekijken en er vertrouwd mee te geraken. Samenwerken onder de cursisten is toegelaten en wordt aangemoedigd. Wanneer je vast komt te zitten, mag je altijd beroep doen op de lector om je te helpen.
 
@@ -89,7 +89,7 @@ Deze cursus bouwt verder op de veronderstelling dat je al een zekere basiskennis
 Wie er behoefte/nood aan heeft om bepaalde verwachte voorkennis bij te werken, kan dat aan de hand van volgende leermaterialen. Deze zijn allemaal gratis/vrij beschikbaar.
 
 * Cobbaut, P. 2015. *Linux Fundamentals.* <http://linux-training.be/downloads/> (gratis e-book)
-* Bert Van Vreckem, *Linux videolessen* <https://www.youtube.com/user/bertvvrhogent/>
+* Van Vreckem, B. *Linux videolessen* <https://www.youtube.com/user/bertvvrhogent/>
 
 ## Leerdoelen
 
@@ -132,9 +132,11 @@ Wie er behoefte/nood aan heeft om bepaalde verwachte voorkennis bij te werken, k
 
 ## Leermiddelen
 
-Probeer in te gaan tegen de neiging om al je vragen op Google op te zoeken, want je zal vaak informatie vinden die niet relevant is voor de variant van Linux die we in deze cursus gebruiken (RHEL/CentOS 7), of verouderd. Veel HOWTOs, blogartikels en handleidingen zijn geschreven in de context van Ubuntu/Debian of van een oudere versie van RHEL/CentOS en die verschillen in een aantal fundamentele zaken van de laatste versie van CentOS.
+Probeer in te gaan tegen de neiging om *al* je vragen/problemen op Google op te zoeken, want je zal vaak informatie vinden die niet relevant is voor de variant van Linux die we in deze cursus gebruiken (RHEL/CentOS 7), of verouderd. Veel HOWTOs, blogartikels en handleidingen zijn geschreven in de context van Ubuntu/Debian of van een oudere versie van RHEL/CentOS en die verschillen in een aantal fundamentele zaken van de laatste versie van CentOS.
 
-[CentOS](https://www.centos.org/) is een Linux-distributie die in essentie identiek is aan RedHat Enterprise Linux (RHEL), maar zonder het onderhoudscontract dat verplicht is wanneer je gebruik maakt van RHEL. CentOS is bijgevolg gratis, in tegenstelling tot RHEL.  De "RHEL 7 System Administrator's Guide" kan je beschouwen als het handboek voor deze cursus, alhoewel we ook gebruik zullen maken van andere bronnen.
+[CentOS](https://www.centos.org/) is een Linux-distributie die in essentie identiek is aan RedHat Enterprise Linux (RHEL), maar zonder het onderhoudscontract dat verplicht is wanneer je gebruik maakt van RHEL. CentOS is bijgevolg gratis, in tegenstelling tot RHEL. Vaak wordt *Enterprise Linux* (afk. EL) als een term gebruikt die zowel CentOS als RedHat omvat.
+
+Je kan de "RHEL 7 System Administrator's Guide" beschouwen als het handboek voor deze cursus, alhoewel we ook gebruik zullen maken van andere bronnen.
 
 - Cameron, T., 2012. *SELinux for Mere Mortals.* 2012 Red Hat Summit. <http://www.youtube.com/watch?v=MxjenQ31b70>
 - Hashimoto, M. *Vagrant Documentation.* <https://docs.vagrantup.com/v2/>
@@ -144,7 +146,8 @@ Probeer in te gaan tegen de neiging om al je vragen op Google op te zoeken, want
     - hst. 1-4, 10, 13, 14, 17, 20, 24
 - Svistunov, M., et al. 2016. *Red Hat Enterprise Linux 7 System Administrator's Guide* <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/>
     - hst. 1-4, 7-9, 11, 14.1, 18, 20
-- Van Vreckem, B. 2017. *Network Troubleshooting Checklist,* <https://github.com/bertvv/cheat-sheets>
+* Van Vreckem, B. (2017). *Basic commands for EL7*, CentOS Dojo Brussels 2017. <https://bertvv.github.io/presentation-el7-basics/>
+* Van Vreckem, B. (2017). *Troubleshooting network services in Linux*. <https://bertvv.github.io/linux-network-troubleshooting/>
 - Vernooij, J. R., et al. 2010. *The Official Samba 3.5.x HOWTO and Reference Guide.* <https://www.samba.org/samba/docs/man/Samba-HOWTO-Collection/>
     * Hst. 38 The Samba Checklist <https://www.samba.org/samba/docs/man/Samba-HOWTO-Collection/diagnosis.html>
     * Hst. 39 Analyzing and Solving Samba Problems <https://www.samba.org/samba/docs/man/Samba-HOWTO-Collection/problems.html>
