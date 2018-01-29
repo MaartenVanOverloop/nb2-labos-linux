@@ -132,7 +132,7 @@ Wie er behoefte/nood aan heeft om bepaalde verwachte voorkennis bij te werken, k
 
 ## Leermiddelen
 
-Probeer in te gaan tegen de neiging om *al* je vragen/problemen op Google op te zoeken, want je zal vaak informatie vinden die niet relevant is voor de variant van Linux die we in deze cursus gebruiken (RHEL/CentOS 7), of verouderd. Veel HOWTOs, blogartikels en handleidingen zijn geschreven in de context van Ubuntu/Debian of van een oudere versie van RHEL/CentOS en die verschillen in een aantal fundamentele zaken van de laatste versie van CentOS.
+Probeer in te gaan tegen de neiging om *al* je vragen/problemen op Google op te zoeken, want je zal vaak informatie vinden die niet relevant is voor de variant van Linux die we in deze cursus gebruiken (RHEL/CentOS 7), of verouderd. Veel HOWTOs, blogartikels en handleidingen zijn geschreven in de context van Ubuntu/Debian of van een oudere versie van RHEL/CentOS en die verschillen in een aantal fundamentele zaken van de laatste versie van CentOS. Kijk dus eerst naar de relevante publicaties in de referentielijst.
 
 [CentOS](https://www.centos.org/) is een Linux-distributie die in essentie identiek is aan RedHat Enterprise Linux (RHEL), maar zonder het onderhoudscontract dat verplicht is wanneer je gebruik maakt van RHEL. CentOS is bijgevolg gratis, in tegenstelling tot RHEL. Vaak wordt *Enterprise Linux* (afk. EL) als een term gebruikt die zowel CentOS als RedHat omvat.
 
